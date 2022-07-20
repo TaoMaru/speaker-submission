@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Speaker Submission</title>
+
+    </head>
+
+    <body>
+
+        <header class="speakerFormHeader">
+            <h1>Speaker Submission</h1>
+            <p>Want to speak at our (fake) conference? 
+                Fill out this form.
+            </p>
+        </header>
+
+        <form action="" method="get" class="speakerForm">
+
+            <div class="formRow">
+
+                <label for="fullName">Name</label>
+                <input type="text" id="fullName" name="fullName">
+
+            </div>
+
+            <div class="formRow">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"
+                    placeholder="you@example.com">
+
+            </div>
+
+            <fieldset class="legacyFormRow">
+
+                <legend>Type of Talk</legend>
+
+                <input type="radio" id="talkType1" value="mainStage"
+                        name="talkType">
+                <label for="talkType1" class="radioLabel">Main Stage</label>
+
+                <input type="radio" id="talkType2" value="workshop"
+                        name="talkType" checked>
+                <label for="talkType2" class="radioLabel">Workshop</label>
+
+            </fieldset>
+
+            <div class="formRow">
+
+                <label for="tShirt">T-Shirt Size</label>
+                <select id="tShirt" name="tShirt">
+
+                    <option value="xs">Extra Small</option>
+                    <option value="s">Small</option>
+                    <option value="m">Medium</option>
+                    <option value="l">Large</option>
+
+                </select>
+
+            </div>
+
+            <div class="formRow">
+
+                <label for="abstract">Abstract</label>
+                <textArea id="abstract" name="abstract"></textArea>
+                <div class="instructions">Describe your talk in 500 words 
+                        or less
+                </div>
+
+            </div>
+
+            <div class="formRow">
+
+                <label for="available" class="checkboxLabel">
+
+                    <input type="checkbox" id="available" name="available"
+                            value="isAvailable" checked>
+                    <span>I'm actually available the date of the talk</span>
+
+                </label>
+
+            </div>
+
+            <div class="formRow">
+
+                <button>Submit</button>
+
+            </div>
+
+        </form>
+
+    </body>
+</html>
